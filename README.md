@@ -35,39 +35,26 @@ A simple and elegant **Password Hide/Show Feature** built with **HTML**, **CSS**
 
 ## Code Highlights 💻
 ### HTML
-```
-<div class="input-box">
-    <input type="text" placeholder="password" class="password" id="password">
-    <span><i class="fa-solid fa-eye" id="eyeIcon"></i></span>
-</div>
-```
-### CSS
-```
-.input-box {
-    margin-top: 40px;
-    background: white;
-    height: 30px;
-    border-radius: 5px;
-    padding: 2px;
-    width: 280px;  
-    display: flex;
-    align-items: center;     
-}
-```
+   ```html
+   <div class="input-box">
+       <input type="text" placeholder="password" class="password" id="password">
+       <span><i class="fa-solid fa-eye" id="eyeIcon"></i></span>
+   </div>
+   ```
 ### JavaScript
-```javascript
-const password = document.getElementById('password');
-const eyeIcon = document.getElementById('eyeIcon');
+   ```javascript
+   const password = document.getElementById('password');
+   const eyeIcon = document.getElementById('eyeIcon');
 
-eyeIcon.onclick = () => {
-    if (password.type == 'password') {
-        password.type = 'text';
-        eyeIcon.className = 'fa-solid fa-eye';
-    } else {
-        password.type = 'password';
-        eyeIcon.className = 'fa-solid fa-eye-slash';
-    }
-};
-```
+   eyeIcon.onclick = () => {
+       if (password.type == 'password') {
+           password.type = 'text';
+           eyeIcon.className = 'fa-solid fa-eye';
+       } else {
+           password.type = 'password';
+           eyeIcon.className = 'fa-solid fa-eye-slash';
+       }
+   };
+   ```
 ## License 📜
 This project is open-source and available under the MIT License. Feel free to use, modify, and contribute! 😊

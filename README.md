@@ -34,14 +34,14 @@ A simple and elegant **Password Hide/Show Feature** built with **HTML**, **CSS**
 - JavaScript: For implementing the hide/show password functionality.
 
 ## Code Highlights 💻
-# HTML
+### HTML
 ```
 <div class="input-box">
     <input type="text" placeholder="password" class="password" id="password">
     <span><i class="fa-solid fa-eye" id="eyeIcon"></i></span>
 </div>
 ```
-# CSS
+### CSS
 ```
 .input-box {
     margin-top: 40px;
@@ -54,8 +54,8 @@ A simple and elegant **Password Hide/Show Feature** built with **HTML**, **CSS**
     align-items: center;     
 }
 ```
-# JavaScript
-```
+### JavaScript
+```javascript
 const password = document.getElementById('password');
 const eyeIcon = document.getElementById('eyeIcon');
 
